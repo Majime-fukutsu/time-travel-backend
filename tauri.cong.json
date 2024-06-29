@@ -1,0 +1,23 @@
+{
+  "build": {
+    "beforeDevCommand": "yarn --cwd time-travel-frontend dev",
+    "beforeBuildCommand": "yarn --cwd time-travel-frontend build",
+    "devPath": "http://localhost:1420",
+    "distDir": "time-travel-frontend/dist"
+  },
+  "package": {
+    "productName": "tauri-app",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "embeddedServer": {
+      "active": true,
+      "port":1420 
+    },
+    "bundle": {
+      "active": true,
+      "targets": ["deb", "appimage"]
+    }
+  }
+}
+
