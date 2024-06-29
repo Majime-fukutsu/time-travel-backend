@@ -2,5 +2,16 @@
 name = "time-travel-backend"
 version = "0.1.0"
 edition = "2021"
+description = "Time Travel backend using tauri"
+authors = ["真面目不屈"]
+
+[build-dependencies]
+tauri-build = { version = "1", features = [] }
 
 [dependencies]
+tauri = { version = "1", features = ["shell-open"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
