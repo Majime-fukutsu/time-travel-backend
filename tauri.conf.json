@@ -15,6 +15,7 @@
       "port":1420 
     },
     "bundle": {
+      "identifier": "com.majime-fukutsu.time-travel",
       "active": true,
       "targets": ["deb", "appimage"]
     }
